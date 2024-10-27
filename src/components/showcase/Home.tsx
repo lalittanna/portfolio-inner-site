@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from '../general';
 
-import { useNavigate } from 'react-router';
+import forhire from '../../assets/pictures/forHireGif.gif';
+import { useNavigate } from 'react-router-dom';
 
-export interface HomeProps {}
+export interface HomeProps { }
 
 const Home: React.FC<HomeProps> = (props) => {
     const navigate = useNavigate();
@@ -15,8 +16,8 @@ const Home: React.FC<HomeProps> = (props) => {
     return (
         <div style={styles.page}>
             <div style={styles.header}>
-                <h1 style={styles.name}>Henry Heffernan</h1>
-                <h2>Software Engineer</h2>
+                <h1 style={styles.name}>Ruchika Jashnani</h1>
+                <h2>Content Strategist</h2>
             </div>
             <div style={styles.buttons}>
                 <Link containerStyle={styles.link} to="about" text="ABOUT" />
