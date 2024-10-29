@@ -1,9 +1,8 @@
 import React from 'react';
-import me from '../../../assets/pictures/AboutFigure1.png';
 
 import ResumeDownload from '../ResumeDownload';
 
-export interface NiravModiProps { }
+export interface NiravModiProps {}
 
 const NiravModi: React.FC<NiravModiProps> = (props) => {
     return (
@@ -12,7 +11,13 @@ const NiravModi: React.FC<NiravModiProps> = (props) => {
             <div className="text-block">
                 <br />
                 <p>
-                    That time I channeled my inner Shakespeare and pulled off a Valentine’s Day campaign that surprised even me. Normally, romance novels aren’t my scene, but this campaign took a memorable twist. Headlined by Priyanka Chopra, it was a rare chance to work with a brand that merged high-end appeal with mainstream reach. Here are a few of my favourite creatives from this project.
+                    That time I channeled my inner Shakespeare and pulled off a
+                    Valentine’s Day campaign that surprised even me. Normally,
+                    romance novels aren’t my scene, but this campaign took a
+                    memorable twist. Headlined by Priyanka Chopra, it was a rare
+                    chance to work with a brand that merged high-end appeal with
+                    mainstream reach. Here are a few of my favourite creatives
+                    from this project.
                 </p>
                 <br />
                 {/* <div className="captioned-image">
@@ -29,14 +34,14 @@ const NiravModi: React.FC<NiravModiProps> = (props) => {
     );
 };
 
-const styles: StyleSheetCSS = {
-    video: {
-        width: '100%',
-        padding: 12,
-    },
-    caption: {
-        width: '80%',
-    },
-};
+// const styles: StyleSheetCSS = {
+//     video: {
+//         width: '100%',
+//         padding: 12,
+//     },
+//     caption: {
+//         width: '80%',
+//     },
+// };
 
 export default NiravModi;

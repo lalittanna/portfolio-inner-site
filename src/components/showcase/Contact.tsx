@@ -1,11 +1,11 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useEffect, useState } from 'react';
 import colors from '../../constants/colors';
 import emailIcon from '../../assets/pictures/contact-email.png';
 import InstaIcon from '../../assets/pictures/contact-instagram.png';
 import inIcon from '../../assets/pictures/contact-in.png';
 import ResumeDownload from './ResumeDownload';
 
-export interface ContactProps { }
+export interface ContactProps {}
 
 // function to validate email
 const validateEmail = (email: string) => {
@@ -74,9 +74,9 @@ const Contact: React.FC<ContactProps> = (props) => {
             // the response will be either {success: true} or {success: false, error: message}
             const data = (await res.json()) as
                 | {
-                    success: false;
-                    error: string;
-                }
+                      success: false;
+                      error: string;
+                  }
                 | { success: true };
             if (data.success) {
                 setFormMessage(`Message successfully sent. Thank you ${name}!`);
@@ -130,8 +130,9 @@ const Contact: React.FC<ContactProps> = (props) => {
             </div>
             <div className="text-block">
                 <p>
-                    Thanks for scrolling all the way down here. I like you n’all.
-                    Want to work together or explore hidden cafés? Send me a message below.
+                    Thanks for scrolling all the way down here. I like you
+                    n’all. Want to work together or explore hidden cafés? Send
+                    me a message below.
                 </p>
                 <br />
                 <p>

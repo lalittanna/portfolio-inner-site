@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from '../general';
-import forHire from '../../assets/pictures/forHireGif.gif';
 import { useLocation, useNavigate } from 'react-router-dom';
 
-export interface VerticalNavbarProps { }
+export interface VerticalNavbarProps {}
 
 const VerticalNavbar: React.FC<VerticalNavbarProps> = (props) => {
     const location = useLocation();
@@ -26,7 +25,7 @@ const VerticalNavbar: React.FC<VerticalNavbarProps> = (props) => {
         } else {
             setIsHome(false);
         }
-        return () => { };
+        return () => {};
     }, [location.pathname]);
 
     return !isHome ? (
