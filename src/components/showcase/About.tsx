@@ -3,7 +3,7 @@ import me from '../../assets/pictures/AboutFigure1.png';
 import { Link } from 'react-router-dom';
 import ResumeDownload from './ResumeDownload';
 
-export interface AboutProps {}
+export interface AboutProps { }
 
 const About: React.FC<AboutProps> = (props) => {
     return (
@@ -15,26 +15,15 @@ const About: React.FC<AboutProps> = (props) => {
             <br />
             <div className="text-block">
                 <p>
-                    Before setting up shop in London, I was crafting creative
-                    strategies for luxury and B2B brands (think diamonds one
-                    day, industrial adhesives the next – keeps things
-                    interesting). I firmly believe in culture that moves the
-                    needle and the bottom line. I also believe that being
-                    digital-first is just common sense these days and that no
-                    great creative happens without a strategy (you can quote me
-                    on that).
+                    Before setting up shop in London, I was crafting creative strategies for both luxury and B2B brands – diamonds one day, industrial adhesives the next. I believe in a culture that moves the needle and the bottom line. Being digital-first is simply common sense today, and, in my view, no great creative work happens without a strategy (you can quote me on that).
                 </p>
                 <br />
                 <p>
-                    When someone says, “We’ve got tight timelines and tighter
-                    budgets,” I say, “Challenge accepted!” I’ve been known to
-                    pull off content miracles – from bumper ads to product
-                    shoots – within 4 hours to a week (*yes, really).
+                    My response to “We have short timelines and tight budgets” is a data-driven engine built to deliver campaigns in four hours to a week (*terms and conditions apply). I’ve led thumb-stopping campaigns across platforms and borders, producing everything from bumper ads to product shoots.
                 </p>
                 <br />
                 <p>
-                    In short, I make things happen. You can subscribe to this
-                    strategy-driven magic, too (just kidding, but seriously).
+                    P.S. You can subscribe to this service.
                 </p>
                 <br />
                 <br />
@@ -43,17 +32,15 @@ const About: React.FC<AboutProps> = (props) => {
                     <img src={me} style={styles.image} alt="" />
                     <p>
                         <sub>
-                            <b>Figure 1:</b> Early evidence of my ‘grab the
-                            opportunity’ attitude.
+                            <b>Figure 1:</b> Early evidence of my ‘grab the opportunity’ attitude.
                         </sub>
                     </p>
                 </div>
                 <br />
                 <p>
-                    Take a look around, and I hope you enjoy exploring the rest
-                    of my portfolio! Fancy a chat? I’m all ears. Reach out
-                    through the <Link to="/contact">contact page</Link> or drop
-                    me a line at{' '}
+                    Take a look around, and I hope you enjoy exploring the rest of my portfolio! Fancy a chat? I’m all ears. Reach out through the{' '}
+                    <Link to="/contact">contact page</Link> or drop me a line
+                    at{' '}
                     <a href="ruchika.jashnani@gmail.com">
                         ruchika.jashnani@gmail.com
                     </a>

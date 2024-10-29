@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from '../general';
-import { useLocation, useNavigate } from 'react-router';
+import forHire from '../../assets/pictures/forHireGif.gif';
+import { useLocation, useNavigate } from 'react-router-dom';
 
-export interface VerticalNavbarProps {}
+export interface VerticalNavbarProps { }
 
 const VerticalNavbar: React.FC<VerticalNavbarProps> = (props) => {
     const location = useLocation();
@@ -25,15 +26,15 @@ const VerticalNavbar: React.FC<VerticalNavbarProps> = (props) => {
         } else {
             setIsHome(false);
         }
-        return () => {};
+        return () => { };
     }, [location.pathname]);
 
     return !isHome ? (
         <div style={styles.navbar}>
             <div style={styles.header}>
-                <h1 style={styles.headerText}>Henry</h1>
-                <h1 style={styles.headerText}>Heffernan</h1>
-                <h3 style={styles.headerShowcase}>Showcase '22</h3>
+                <h1 style={styles.headerText}>Ruchika</h1>
+                <h1 style={styles.headerText}>Jashnani</h1>
+                <h3 style={styles.headerShowcase}>Showcase '24</h3>
             </div>
             <div style={styles.links}>
                 <Link containerStyle={styles.link} to="" text="HOME" />
@@ -58,18 +59,43 @@ const VerticalNavbar: React.FC<VerticalNavbarProps> = (props) => {
                         <div style={styles.insetLinks}>
                             <Link
                                 containerStyle={styles.insetLink}
-                                to="projects/software"
-                                text="SOFTWARE"
+                                to="projects/3m"
+                                text="3M"
                             />
                             <Link
                                 containerStyle={styles.insetLink}
-                                to="projects/music"
-                                text="MUSIC"
+                                to="projects/baccarose"
+                                text="BACCAROSE"
                             />
                             <Link
                                 containerStyle={styles.insetLink}
-                                to="projects/art"
-                                text="ART"
+                                to="projects/parcos"
+                                text="PARCOS"
+                            />
+                            <Link
+                                containerStyle={styles.insetLink}
+                                to="projects/linkedin"
+                                text="LINKEDIN"
+                            />
+                            <Link
+                                containerStyle={styles.insetLink}
+                                to="projects/niravmodi"
+                                text="NIRAV MODI"
+                            />
+                            <Link
+                                containerStyle={styles.insetLink}
+                                to="projects/lodha"
+                                text="LODHA"
+                            />
+                            <Link
+                                containerStyle={styles.insetLink}
+                                to="projects/kaya"
+                                text="KAYA"
+                            />
+                            <Link
+                                containerStyle={styles.insetLink}
+                                to="projects/hoq"
+                                text="HOUSE OF QUADRI"
                             />
                         </div>
                     )
@@ -98,7 +124,7 @@ const styles: StyleSheetCSS = {
         padding: 48,
         boxSizing: 'border-box',
         position: 'fixed',
-        overflow: 'hidden',
+        overflow: 'auto',
     },
     header: {
         flexDirection: 'column',

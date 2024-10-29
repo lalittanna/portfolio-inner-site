@@ -1,242 +1,222 @@
 import React from 'react';
 import ResumeDownload from './ResumeDownload';
 
-export interface ExperienceProps {}
+export interface ExperienceProps { }
 
 const Experience: React.FC<ExperienceProps> = (props) => {
     return (
         <div className="site-page-content">
+            <div style={styles.headerContainer}>
+                <div style={styles.header}>
+                    <div style={styles.headerRow}>
+                        <h1>3M [OLIVER]</h1>
+                        <a
+                            rel="noreferrer"
+                            target="_blank"
+                            href={'http://www.oliver.agency'}
+                        >
+                            <h4>www.oliver.agency</h4>
+                        </a>
+                    </div>
+                    <div style={styles.headerRow}>
+                        <h3>APAC Content Strategist | Singapore, Remote</h3>
+                        <b>
+                            <p>Feb 2023 – Aug 2024</p>
+                        </b>
+                    </div>
+                </div>
+            </div>
+            <div className="text-block">
+                <p>
+                    Integrated Marketing, Eloqua Campaigns, User Journey, Google Ads, Campaign Strategy
+                </p>
+                <br />
+                <ul>
+                    <li>
+                        <p>
+                            Led 3M SIBG APAC communications across five divisions, achieving a 44% growth in qualified leads (H1 2024).
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Created over 30 Eloqua campaigns, boosting average open rates from 12% to 35%, with a peak of 99% and improving overall conversion to 57% through A/B testing.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Collaborated with country leads across 12 markets, crafting data-driven briefs tailored to local needs.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Mentored 4 team members and developed training materials and templates for team-wide consistency.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div style={styles.headerContainer}>
+                <div style={styles.header}>
+                    <div style={styles.headerRow}>
+                        <h1>BACCAROSE</h1>
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href={'http://baccarose.com'}
+                        >
+                            <h4>baccarose.com</h4>
+                        </a>
+                    </div>
+                    <div style={styles.headerRow}>
+                        <h3>Senior Creative Strategist | India</h3>
+                        <b>
+                            <p>May 2022 – Dec 2022</p>
+                        </b>
+                    </div>
+                </div>
+            </div>
+            <div className="text-block">
+                <p>
+                    Luxury Branding, In-store/Digital UX, Launch Events, KOL Campaigns, Google Ads
+                </p>
+                <br />
+                <ul>
+                    <li>
+                        <p>
+                            Managed campaigns for 30+ luxury brands, including Gucci, Kate Spade, BOSS, Montblanc, and Paco Rabanne, increasing overall engagement by 4x.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Developed data-driven, cross-channel storytelling and refined sales strategies for direct and partner channels.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Built relationships with brand teams and agencies, overseeing product launches, negotiations, and editorial shoots.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Mentored junior team members, ensuring consistent messaging across MARCOM.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div style={styles.headerContainer}>
+                <div style={styles.header}>
+                    <div style={styles.headerRow}>
+                        <h1>HOUSE OF QUADRI</h1>
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href={'http://houseofquadri.com'}
+                        >
+                            <h4>houseofquadri.com</h4>
+                        </a>
+                    </div>
+                    <div style={styles.headerRow}>
+                        <h3>Brand Consultant [Contract] | India</h3>
+                        <b>
+                            <p>Feb 2022 – Apr 2022</p>
+                        </b>
+                    </div>
+                </div>
+            </div>
+            <div className="text-block">
+                <p>
+                    Creative Direction, Brand Identity, Editorial Shoots
+                </p>
+                <br />
+                <ul>
+                    <li>
+                        <p>
+                            Shaped editorial content and influencer marketing strategy, boosting organic engagement and lead generation by 2x.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Led strategic brand development and visual merchandising, driving sales growth within three months.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div style={styles.headerContainer}>
+                <div style={styles.header}>
+                    <div style={styles.headerRow}>
+                        <h1>NYKAA, KLAIRS, LIMESE (K-BEAUTY)</h1>
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href={'http://atlancer.com'}
+                        >
+                            <h4>atlancer.com</h4>
+                        </a>
+                    </div>
+                    <div style={styles.headerRow}>
+                        <h3>Freelance Digital Lead | India</h3>
+                        <b>
+                            <p>Nov 2017 – Jan 2022</p>
+                        </b>
+                    </div>
+                </div>
+            </div>
+            <div className="text-block">
+                <p>
+                    Campaign Strategy, Project Management, Copywriting
+                </p>
+                <br />
+                <ul>
+                    <li>
+                        <p>
+                            Planned and executed digital campaigns and video shoots to increase inbound traffic and engagement.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div style={styles.headerContainer}>
+                <div style={styles.header}>
+                    <div style={styles.headerRow}>
+                        <h1>SCHBANG</h1>
+                        <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href={'http://www.schbang.com'}
+                        >
+                            <h4>www.schbang.com</h4>
+                        </a>
+                    </div>
+                    <div style={styles.headerRow}>
+                        <h3>Creative Strategist | India</h3>
+                        <b>
+                            <p>Nov 2016 – Oct 2017</p>
+                        </b>
+                    </div>
+                </div>
+            </div>
+            <div className="text-block">
+                <p>
+                    Campaign Strategy, Google Ads, Project Management, Copywriting, Video Production
+                </p>
+                <br />
+                <ul>
+                    <li>
+                        <p>
+                            Awarded DOD’s Best Digital Integrated Campaign for Kaya, driving 42% engagement and 1.3M views on FB.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Led strategy and content for 20+ videos and won pitches for brands like LinkedIn, Phillips, Castrol, Hamleys, Asian Paints, Godrej Properties, Lodha, and more.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Wrote and edited 15,000+ words for LinkedIn case studies, reports, coffee table books, and videos.
+                        </p>
+                    </li>
+                </ul>
+            </div>
             <ResumeDownload />
-            <div style={styles.headerContainer}>
-                <div style={styles.header}>
-                    <div style={styles.headerRow}>
-                        <h1>Hover</h1>
-                        <a
-                            rel="noreferrer"
-                            target="_blank"
-                            href={'https://hover.gg/'}
-                        >
-                            <h4>www.hover.gg</h4>
-                        </a>
-                    </div>
-                    <div style={styles.headerRow}>
-                        <h3>Frontend Engineer</h3>
-                        <b>
-                            <p>Summer 2020 - Fall 2021</p>
-                        </b>
-                    </div>
-                </div>
-            </div>
-            <div className="text-block">
-                <p>
-                    Targeted towards online content creators and streamers
-                    looking to build a brand, Hover is the home of over 150K
-                    users. Written in Typescript using React, React-Native,
-                    Framer, Express, and Redux.
-                </p>
-                <br />
-                <ul>
-                    <li>
-                        <p>
-                            Architected and engineered the vertical scrolling
-                            discover player which, at its daily peak, was
-                            responsible for generating over 600,000 views across
-                            20,000 active users.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Designed and implemented multiple features to
-                            increase app usability and user experience while
-                            ensuring the quality, maintainability and
-                            scalability of the front end as the user base grew
-                            by over 50,000.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Coordinated major refactors targeted towards app
-                            optimization and performance resulting in a smoother
-                            user experience and accomplished by eliminating
-                            redundant re-renders and API calls by over 50%.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Directed and executed an internal migration of 3
-                            individual repositories to a single monorepo,
-                            greatly reducing overhead for developing new
-                            features, fixing bugs, and managing dependencies.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Rebuilt the website with React and shared mobile app
-                            components allowing users to access a wide variety
-                            of app interactions entirely on the web, resulting
-                            in over 700,000 total site visits.
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <div style={styles.headerContainer}>
-                <div style={styles.header}>
-                    <div style={styles.headerRow}>
-                        <h1>BrACS</h1>
-                        <a
-                            target="_blank"
-                            rel="noreferrer"
-                            href={'https://bracs.co/'}
-                        >
-                            <h4>www.bracs.co</h4>
-                        </a>
-                    </div>
-                    <div style={styles.headerRow}>
-                        <h3>Team Lead & Engineer</h3>
-                        <b>
-                            <p>Fall 2021 - Spring 2022</p>
-                        </b>
-                    </div>
-                </div>
-            </div>
-            <div className="text-block">
-                <p>
-                    Supervised and developed the front end of bracs.co, a
-                    beautifully simple and effective bracket creation and
-                    management engine. Written in Typescript using React and
-                    deployed using AWS Elastic Beanstalk.
-                </p>
-                <br />
-                <ul>
-                    <li>
-                        <p>
-                            Managed the project and team members by conducting
-                            bi-weekly stand-ups.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Architected bracket view UI using React Flow and
-                            custom bracket data types built from binary trees.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Created conversion algorithms to serialize bracket
-                            tree data to allow for saving in the cloud.
-                        </p>
-                    </li>
-                    <li>
-                        <p>
-                            Implemented bracket generation utilities which
-                            employ gray code for proper team seeding and
-                            placement.
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <div style={styles.headerContainer}>
-                <div style={styles.header}>
-                    <div style={styles.headerRow}>
-                        <h1>K-F/X</h1>
-                        <a
-                            target="_blank"
-                            rel="noreferrer"
-                            href={'https://kfxnyc.com/'}
-                        >
-                            <h4>www.kfxnyc.com</h4>
-                        </a>
-                    </div>
-                    <div style={styles.headerRow}>
-                        <h3>Special Effects Technician</h3>
-                        <b>
-                            <p>Fall 2019, Summer 2021</p>
-                        </b>
-                    </div>
-                </div>
-            </div>
-            <div className="text-block">
-                <p>
-                    Applied problem solving and technical skills to operate
-                    large equipment such as rain machines, fog machines, small
-                    explosives and general rigging with a professional crew of
-                    50+ people.
-                </p>
-                <br />
-                <h3 style={styles.indent}>Screen Credits:</h3>
-                <ul>
-                    <li style={styles.row}>
-                        <p>• Ray Donovan</p>
-                        <p>
-                            [{' '}
-                            <a
-                                href="https://www.sho.com/ray-donovan"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                SHOWTIME
-                            </a>{' '}
-                            ]
-                        </p>
-                    </li>
-                    <li style={styles.row}>
-                        <p>• Ray Donovan: The Movie</p>
-                        <p>
-                            [{' '}
-                            <a
-                                href="https://www.sho.com/titles/3508117/ray-donovan-the-movie"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                SHOWTIME
-                            </a>{' '}
-                            ]
-                        </p>
-                    </li>
-                    <li style={styles.row}>
-                        <p>• Hightown</p>
-                        <p>
-                            [{' '}
-                            <a
-                                href="https://www.starz.com/us/en/series/hightown/57463"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                STARZ
-                            </a>{' '}
-                            ]
-                        </p>
-                    </li>
-                    <li style={styles.row}>
-                        <p>• Bull</p>
-                        <p>
-                            [{' '}
-                            <a
-                                href="https://www.cbs.com/shows/bull/"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                CBS
-                            </a>{' '}
-                            ]
-                        </p>
-                    </li>
-                    <li style={styles.row}>
-                        <p>• At Home with Amy Sedaris</p>
-                        <p>
-                            [{' '}
-                            <a
-                                href="https://www.trutv.com/shows/at-home-with-amy-sedaris"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                truTV
-                            </a>{' '}
-                            ]
-                        </p>
-                    </li>
-                </ul>
-            </div>
         </div>
     );
 };

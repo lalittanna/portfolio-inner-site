@@ -1,18 +1,25 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from '../showcase/Home';
 import About from '../showcase/About';
 import Window from '../os/Window';
 import Experience from '../showcase/Experience';
 import Projects from '../showcase/Projects';
 import Contact from '../showcase/Contact';
-import SoftwareProjects from '../showcase/projects/Software';
-import MusicProjects from '../showcase/projects/Music';
-import ArtProjects from '../showcase/projects/Art';
+
 import VerticalNavbar from '../showcase/VerticalNavbar';
 import useInitialWindowSize from '../../hooks/useInitialWindowSize';
 
-export interface ShowcaseExplorerProps extends WindowAppProps {}
+import ThreeM from '../showcase/projects/3M';
+import Baccarose from '../showcase/projects/Baccarose';
+import Parcos from '../showcase/projects/Parcos';
+import LinkedIn from '../showcase/projects/LinkedIn';
+import NiravModi from '../showcase/projects/NiravModi';
+import Lodha from '../showcase/projects/Lodha';
+import Kaya from '../showcase/projects/Kaya';
+import HOQ from '../showcase/projects/HOQ';
+
+export interface ShowcaseExplorerProps extends WindowAppProps { }
 
 const ShowcaseExplorer: React.FC<ShowcaseExplorerProps> = (props) => {
     const { initWidth, initHeight } = useInitialWindowSize({ margin: 100 });
@@ -23,14 +30,14 @@ const ShowcaseExplorer: React.FC<ShowcaseExplorerProps> = (props) => {
             left={56}
             width={initWidth}
             height={initHeight}
-            windowTitle="Henry Heffernan - Showcase 2022"
+            windowTitle="Ruchika Jashnani - Showcase 2024"
             windowBarIcon="windowExplorerIcon"
             closeWindow={props.onClose}
             onInteract={props.onInteract}
             minimizeWindow={props.onMinimize}
-            bottomLeftText={'© Copyright 2022 Henry Heffernan'}
+            bottomLeftText={'© Copyright 2024 Ruchika Jashnani'}
         >
-            <Router>
+            <BrowserRouter>
                 <div className="site-page">
                     <VerticalNavbar />
                     <Routes>
@@ -39,18 +46,18 @@ const ShowcaseExplorer: React.FC<ShowcaseExplorerProps> = (props) => {
                         <Route path="/experience" element={<Experience />} />
                         <Route path="/projects" element={<Projects />} />
                         <Route path="/contact" element={<Contact />} />
-                        <Route
-                            path="/projects/software"
-                            element={<SoftwareProjects />}
-                        />
-                        <Route
-                            path="/projects/music"
-                            element={<MusicProjects />}
-                        />
-                        <Route path="/projects/art" element={<ArtProjects />} />
+                        <Route path="/projects/3m" element={< ThreeM />} />
+                        <Route path="/projects/baccarose" element={<Baccarose />} />
+                        <Route path="/projects/parcos" element={<Parcos />} />
+                        <Route path="/projects/linkedin" element={<LinkedIn />} />
+                        <Route path="/projects/linkedin" element={<LinkedIn />} />
+                        <Route path="/projects/niravmodi" element={<NiravModi />} />
+                        <Route path="/projects/lodha" element={<Lodha />} />
+                        <Route path="/projects/kaya" element={<Kaya />} />
+                        <Route path="/projects/hoq" element={<HOQ />} />
                     </Routes>
                 </div>
-            </Router>
+            </BrowserRouter>
         </Window>
     );
 };

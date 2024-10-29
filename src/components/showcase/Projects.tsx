@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import software from '../../assets/pictures/projects/software.gif';
 import art from '../../assets/pictures/projects/art.gif';
 import music from '../../assets/pictures/projects/music.gif';
+import project from '../../assets/pictures/projects/project-icon.gif';
 
-export interface ProjectsProps {}
+export interface ProjectsProps { }
 
 interface ProjectBoxProps {
     icon: string;
@@ -68,7 +69,6 @@ const Projects: React.FC<ProjectsProps> = (props) => {
     return (
         <div className="site-page-content">
             <h1>Projects</h1>
-            <h3>& Hobbies</h3>
             <br />
             <p>
                 Click on one of the areas below to check out some of my favorite
@@ -79,25 +79,60 @@ const Projects: React.FC<ProjectsProps> = (props) => {
             <br />
             <div style={styles.projectLinksContainer}>
                 <ProjectBox
-                    icon={software}
+                    icon={project}
                     iconStyle={styles.computerIcon}
-                    title="Software"
-                    subtitle="PROJECTS"
-                    route="software"
+                    title="3M"
+                    subtitle=""
+                    route="/projects/3m"
                 />
                 <ProjectBox
-                    icon={music}
-                    iconStyle={styles.musicIcon}
-                    title="Music"
-                    subtitle="VENTURES"
-                    route="music"
+                    icon={project}
+                    iconStyle={styles.computerIcon}
+                    title="BACCAROSE"
+                    subtitle=""
+                    route="/projects/baccarose"
                 />
                 <ProjectBox
-                    icon={art}
-                    iconStyle={styles.artIcon}
-                    title="Art"
-                    subtitle="ENDEAVORS"
-                    route="art"
+                    icon={project}
+                    iconStyle={styles.computerIcon}
+                    title="PARCOS"
+                    subtitle=""
+                    route="/projects/parcos"
+                />
+                <ProjectBox
+                    icon={project}
+                    iconStyle={styles.computerIcon}
+                    title="LINKEDIN"
+                    subtitle=""
+                    route="/projects/linkedin"
+                />
+                <ProjectBox
+                    icon={project}
+                    iconStyle={styles.computerIcon}
+                    title="NIRAV MODI"
+                    subtitle=""
+                    route="/projects/niravmodi"
+                />
+                <ProjectBox
+                    icon={project}
+                    iconStyle={styles.computerIcon}
+                    title="LODHA"
+                    subtitle=""
+                    route="/projects/lodha"
+                />
+                <ProjectBox
+                    icon={project}
+                    iconStyle={styles.computerIcon}
+                    title="KAYA"
+                    subtitle=""
+                    route="/projects/kaya"
+                />
+                <ProjectBox
+                    icon={project}
+                    iconStyle={styles.computerIcon}
+                    title="HOUSE OF QUADRI"
+                    subtitle=""
+                    route="/projects/hoq"
                 />
             </div>
         </div>

@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import colors from '../../constants/colors';
-import twitterIcon from '../../assets/pictures/contact-twitter.png';
-import ghIcon from '../../assets/pictures/contact-gh.png';
+import emailIcon from '../../assets/pictures/contact-email.png';
+import InstaIcon from '../../assets/pictures/contact-instagram.png';
 import inIcon from '../../assets/pictures/contact-in.png';
 import ResumeDownload from './ResumeDownload';
 
-export interface ContactProps {}
+export interface ContactProps { }
 
 // function to validate email
 const validateEmail = (email: string) => {
@@ -74,9 +74,9 @@ const Contact: React.FC<ContactProps> = (props) => {
             // the response will be either {success: true} or {success: false, error: message}
             const data = (await res.json()) as
                 | {
-                      success: false;
-                      error: string;
-                  }
+                    success: false;
+                    error: string;
+                }
                 | { success: true };
             if (data.success) {
                 setFormMessage(`Message successfully sent. Thank you ${name}!`);
@@ -115,31 +115,29 @@ const Contact: React.FC<ContactProps> = (props) => {
                 <h1>Contact</h1>
                 <div style={styles.socials}>
                     <SocialBox
-                        icon={ghIcon}
-                        link={'https://github.com/henryjeff'}
+                        icon={emailIcon}
+                        link={'mailto:ruchika.jashnani@gmail.com'}
                     />
                     <SocialBox
                         icon={inIcon}
-                        link={'https://www.linkedin.com/in/henryheffernan/'}
+                        link={'https://www.linkedin.com/in/ruchikajashnani'}
                     />
                     <SocialBox
-                        icon={twitterIcon}
-                        link={'https://twitter.com/henryheffernan'}
+                        icon={InstaIcon}
+                        link={'https://www.instagram.com/ruchikajashnani'}
                     />
                 </div>
             </div>
             <div className="text-block">
                 <p>
-                    I am currently employed, however if you have any
-                    opportunities, feel free to reach out - I would love to
-                    chat! You can reach me via my personal email, or fill out
-                    the form below!
+                    Thanks for scrolling all the way down here. I like you n’all.
+                    Want to work together or explore hidden cafés? Send me a message below.
                 </p>
                 <br />
                 <p>
                     <b>Email: </b>
-                    <a href="mailto:henryheffernan@gmail.com">
-                        henryheffernan@gmail.com
+                    <a href="ruchika.jashnani@gmail.com">
+                        ruchika.jashnani@gmail.com
                     </a>
                 </p>
 
