@@ -80,56 +80,56 @@ const Projects: React.FC<ProjectsProps> = (props) => {
                     iconStyle={styles.computerIcon}
                     title="3M"
                     subtitle=""
-                    route="/projects/3m"
+                    route="projects/3m"
                 />
                 <ProjectBox
                     icon={project}
                     iconStyle={styles.computerIcon}
                     title="BACCAROSE"
                     subtitle=""
-                    route="/projects/baccarose"
+                    route="projects/baccarose"
                 />
                 <ProjectBox
                     icon={project}
                     iconStyle={styles.computerIcon}
                     title="PARCOS"
                     subtitle=""
-                    route="/projects/parcos"
+                    route="projects/parcos"
                 />
                 <ProjectBox
                     icon={project}
                     iconStyle={styles.computerIcon}
                     title="LINKEDIN"
                     subtitle=""
-                    route="/projects/linkedin"
+                    route="projects/linkedin"
                 />
                 <ProjectBox
                     icon={project}
                     iconStyle={styles.computerIcon}
                     title="NIRAV MODI"
                     subtitle=""
-                    route="/projects/niravmodi"
+                    route="projects/niravmodi"
                 />
                 <ProjectBox
                     icon={project}
                     iconStyle={styles.computerIcon}
                     title="LODHA"
                     subtitle=""
-                    route="/projects/lodha"
+                    route="projects/lodha"
                 />
                 <ProjectBox
                     icon={project}
                     iconStyle={styles.computerIcon}
                     title="KAYA"
                     subtitle=""
-                    route="/projects/kaya"
+                    route="projects/kaya"
                 />
                 <ProjectBox
                     icon={project}
                     iconStyle={styles.computerIcon}
                     title="HOUSE OF QUADRI"
                     subtitle=""
-                    route="/projects/hoq"
+                    route="projects/hoq"
                 />
             </div>
         </div>
